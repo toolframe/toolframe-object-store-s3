@@ -6,7 +6,7 @@ and Dashboard image workflow. RustFS is the local integration target.
 
 ## Quick start
 
-Use matching Toolframe Core and SDK 0.3.0 builds with object-storage support.
+Use Toolframe Core 0.6.2 and SDK 0.3.0 with object-storage support.
 Create a private bucket first. Supply credentials through the standard AWS chain
 in the environment that starts Core (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`,
 optional `AWS_SESSION_TOKEN`, or a supported AWS profile/role).
@@ -34,8 +34,6 @@ keys, secrets or URL credentials in plugin configuration.
 
 ```sh
 toolframe-core --home APP plugin enable object-store-s3
-# Requires streamlit-dashboard and matching local wheelhouse:
-toolframe-core --home APP plugin add ./toolframe-demo-image-gallery --enable
 ```
 
 Disable the local object-store provider before enabling S3; each application
