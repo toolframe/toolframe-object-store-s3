@@ -15,7 +15,7 @@ With the plugin installed but disabled, set its configuration in `toolframe.toml
 
 ```toml
 [plugins.object-store-s3]
-source = "/absolute/path/to/toolframe-object-store-s3"
+source = "pypi:toolframe-object-store-s3==0.1.0"
 enabled = false
 
 [plugins.object-store-s3.config]
@@ -27,7 +27,7 @@ addressing_style = "path"
 max_object_bytes = 67108864
 ```
 
-The absolute path is an example placeholder for a local development checkout.
+Core downloads the pinned package from PyPI when applying this configuration.
 Omit `endpoint_url` for AWS S3. TLS verification stays enabled for HTTPS endpoints.
 Use `addressing_style = "virtual"` when required by your service. Do not put access
 keys, secrets or URL credentials in plugin configuration.
@@ -99,3 +99,5 @@ AWS S3 and other compatible services require their own acceptance run; RustFS
 coverage does not establish compatibility with every S3 extension.
 
 Licensed under Apache-2.0; see [LICENSE](LICENSE).
+
+For release validation and Trusted Publisher setup, see [releasing](docs/releasing.md).
