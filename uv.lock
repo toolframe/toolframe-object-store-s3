@@ -383,7 +383,7 @@ wheels = [
 
 [[package]]
 name = "toolframe-object-store-s3"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
     { name = "boto3" },
@@ -412,7 +412,7 @@ dev = [
 
 [[package]]
 name = "toolframe-sdk"
-version = "0.3.0"
+version = "0.4.0"
 source = { editable = "../toolframe-sdk" }
 dependencies = [
     { name = "jsonschema" },
