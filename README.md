@@ -6,7 +6,7 @@ and Dashboard image workflow. RustFS is the local integration target.
 
 ## Quick start
 
-Use Toolframe Core 0.6.2 and SDK 0.3.0 with object-storage support.
+Use Toolframe Core 0.7.0 and SDK 0.4.0 with object-storage support.
 Create a private bucket first. Supply credentials through the standard AWS chain
 in the environment that starts Core (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`,
 optional `AWS_SESSION_TOKEN`, or a supported AWS profile/role).
@@ -15,7 +15,7 @@ With the plugin installed but disabled, set its configuration in `toolframe.toml
 
 ```toml
 [plugins.object-store-s3]
-source = "pypi:toolframe-object-store-s3==0.1.0"
+source = "pypi:toolframe-object-store-s3==0.2.0"
 enabled = false
 
 [plugins.object-store-s3.config]
