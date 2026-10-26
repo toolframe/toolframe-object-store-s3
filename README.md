@@ -15,7 +15,7 @@ With the plugin installed but disabled, set its configuration in `toolframe.toml
 
 ```toml
 [plugins.object-store-s3]
-source = "pypi:toolframe-object-store-s3==0.2.0"
+source = "pypi:toolframe-object-store-s3==0.2.1"
 enabled = false
 
 [plugins.object-store-s3.config]
